@@ -5,16 +5,44 @@ public class ZooManagement {
     String zooName = "myZoo";
 
     public static void main(String[] args) {
-        ZooManagement zm = new ZooManagement();
-        System.out.println(zm.zooName + " comporte " + zm.nbrCages);
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println(" saisir le nombre de cages:");
+        Animal lion = new Animal();
+        lion.name = "Simba";
+        lion.age = 8;
+        lion.family = "Cats";
+        lion.isMammal = true;
 
-        int nbrCagesSaisie = sc.nextInt();
-        ZooManagement zm1 = new ZooManagement();
-        zm1.nbrCages = nbrCagesSaisie;
+        Zoo myZoo = new Zoo("Wildlife Park", "Ariana");
+        Zoo notMyZoo = new Zoo("WaterPark", "Siliana");
+
+        Animal dog = new Animal("Canine", "Snoopy", 2, true);
+
+        System.out.println(myZoo.addAnimal(lion));
+        System.out.println(myZoo.addAnimal(dog));
+
+        myZoo.displayAnimals();
+
+        System.out.println(myZoo.searchAnimal(dog));
+        Animal dog2 = new Animal("Canine", "lll", 2, true);
+        System.out.println(myZoo.searchAnimal(dog2));
+
+        myZoo.displayAnimals();
+
+        System.out.println(myZoo);
+
+        myZoo.addAnimal(lion);
+        myZoo.addAnimal(dog);
+        myZoo.addAnimal(dog2);
+        myZoo.displayAnimals();
+        System.out.println("a" + myZoo.removeAnimal(lion));
+        myZoo.displayAnimals();
+        System.out.println("a" + myZoo.removeAnimal(dog2));
+        myZoo.displayAnimals();
+        System.out.println("a" + myZoo.removeAnimal(dog));
+        myZoo.displayAnimals();
 
     }
+
 }
+
 
