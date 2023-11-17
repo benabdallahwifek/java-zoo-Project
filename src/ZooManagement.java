@@ -12,8 +12,8 @@ public class ZooManagement {
         lion.family = "Cats";
         lion.isMammal = true;
 
-        Zoo myZoo = new Zoo("Wildlife Park", "Ariana");
-        Zoo notMyZoo = new Zoo("WaterPark", "Siliana");
+        Zoo myZoo = new Zoo("Wildlife Park", "Ariana",2);
+        Zoo notMyZoo = new Zoo("WaterPark", "Siliana",3);
 
         Animal dog = new Animal("Canine", "Snoopy", 2, true);
 

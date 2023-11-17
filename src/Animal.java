@@ -3,7 +3,6 @@ public class Animal {
     int age;
     boolean isMammal;
 
-
     public Animal() {
 
     }
@@ -25,4 +24,3 @@ public class Animal {
                 '}';
     }
 }
-
