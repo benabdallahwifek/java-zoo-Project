@@ -1,4 +1,5 @@
 public class Zoo {
+
     public static final int NUMBER_OF_CAGES = 25;
     private Animal[] animals;
     private String name, city;
