@@ -7,15 +7,17 @@ public class ZooManagement {
     public static void main(String[] args) {
 
         Animal lion = new Animal();
-        lion.name = "Simba";
-        lion.age = 8;
-        lion.family = "Cats";
-        lion.isMammal = true;
+        lion.setName("Simba");
+        lion.setAge(8);
+        lion.setFamily("Cats");
+        lion.setMammal(true);
 
-        Zoo myZoo = new Zoo("Wildlife Park", "Ariana",2);
-        Zoo notMyZoo = new Zoo("WaterPark", "Siliana",3);
+        Zoo myZoo = new Zoo("Wildlife Park", "Ariana");
+        Zoo notMyZoo = new Zoo("WaterPark", "Siliana");
+
 
         Animal dog = new Animal("Canine", "Snoopy", 2, true);
+
 
         System.out.println(myZoo.addAnimal(lion));
         System.out.println(myZoo.addAnimal(dog));
@@ -26,7 +28,9 @@ public class ZooManagement {
         Animal dog2 = new Animal("Canine", "lll", 2, true);
         System.out.println(myZoo.searchAnimal(dog2));
 
+//           System.out.println(myZoo.removeAnimal(dog));
         myZoo.displayAnimals();
+
 
         System.out.println(myZoo);
 
@@ -34,12 +38,12 @@ public class ZooManagement {
         myZoo.addAnimal(dog);
         myZoo.addAnimal(dog2);
         myZoo.displayAnimals();
-        System.out.println("a" + myZoo.removeAnimal(lion));
-        myZoo.displayAnimals();
-        System.out.println("a" + myZoo.removeAnimal(dog2));
-        myZoo.displayAnimals();
-        System.out.println("a" + myZoo.removeAnimal(dog));
-        myZoo.displayAnimals();
+
+
+        myZoo.setName("Belvedere Park");
+        Zoo notMyZoo1 = Zoo.comparerZoo(myZoo, notMyZoo);
+        System.out.println(notMyZoo1);
+
 
     }
 
