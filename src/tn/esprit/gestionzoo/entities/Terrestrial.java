@@ -1,3 +1,7 @@
+package tn.esprit.gestionzoo.entities;
+
+import tn.esprit.gestionzoo.entities.Animal;
+
 public final class Terrestrial extends Animal {
 
     private int nbrLegs;
