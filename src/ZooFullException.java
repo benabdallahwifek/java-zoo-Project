@@ -1,2 +1,9 @@
-package PACKAGE_NAME;public class ZooFullException {
+public class ZooFullException extends Exception  {
+    public ZooFullException() {
+    }
+
+    public ZooFullException(String msg) {
+        super(msg);
+    }
 }
+
