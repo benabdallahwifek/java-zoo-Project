@@ -1,4 +1,3 @@
-
 public non-sealed class Aquatic extends Animal {
 
     protected String habitat;

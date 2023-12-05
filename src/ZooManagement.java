@@ -1,11 +1,8 @@
 import java.util.Scanner;
 
 public class ZooManagement {
-    int nbrCages = 20;
-    String zooName = "myZoo";
 
     public static void main(String[] args) {
-
         Animal lion = new Animal();
         lion.setName("Simba");
         lion.setAge(8);
@@ -28,6 +25,7 @@ public class ZooManagement {
         Animal dog2 = new Animal("Canine", "lll", 2, true);
         System.out.println(myZoo.searchAnimal(dog2));
 
+//           System.out.println(myZoo.removeAnimal(dog));
         myZoo.displayAnimals();
 
 
@@ -64,5 +62,7 @@ public class ZooManagement {
     }
 
 }
+
+
 
 
