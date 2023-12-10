@@ -8,12 +8,12 @@ public class ZooManagement {
 
         ZooManagement zm = new ZooManagement();
         System.out.println(zm.zooName + " comporte " + zm.nbrCages);
+
         Scanner sc = new Scanner(System.in);
-        System.out.println("Veuillez saisir le nombre de cages souhaité:");
+        System.out.println(" saisir le nombre de cages:");
+
         int nbrCagesSaisie = sc.nextInt();
         ZooManagement zm1 = new ZooManagement();
         zm1.nbrCages = nbrCagesSaisie;
-        zm1.zooName = "notMyZoo";
-        System.out.println(zm1.zooName + " comporte " + zm1.nbrCages);
     }
 }
